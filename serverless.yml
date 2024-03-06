@@ -1,0 +1,14 @@
+service: my-lambda-service
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-1 # Update to your preferred AWS region
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
