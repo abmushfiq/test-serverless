@@ -4,6 +4,8 @@ provider:
   name: aws
   runtime: nodejs14.x
   region: us-east-1 # Update to your preferred AWS region
+  deploymentBucket:
+    name: terazi-test-1
 
 functions:
   hello:
